@@ -25,10 +25,12 @@
     // with these React API calls
     // 💰 The example in the markdown file should be a good hint for you.
 
+    const helloElement = React.createElement('span', {}, 'Hello')
+    const worldElement = React.createElement('span', {}, 'World!')
+
     const reactElement = React.createElement('div', {
       className: 'container',
-      children: 'Hello World!'
-    })
+    }, helloElement, ' ', worldElement)
     ReactDOM.render(reactElement, rootElement)
 
   </script>
